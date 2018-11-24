@@ -5,6 +5,7 @@
 [![NPM downloads][npm-downloads]][npm-url]
 [![Coverage Status][coveralls-badge]][coveralls-url]
 [![gzip](http://img.badgesize.io/https://unpkg.com/time-alias/lib/time-alias.min.js?compression=gzip)][unpkg-url]
+
 把时间翻译成别名，例如：12:00到13:00=>中午
 
 
@@ -29,6 +30,15 @@ npm i time-alias
 import alias from "time-alias";
 alias(new Date()); // 当前时间名称
 ```
+
+一共有6个时间段，定义如下：
+
+- 早晨： 6:00到8:00
+- 上午：8:00到12:00
+- 中午：12:00到13:00
+- 下午：13:00到18:00
+- 晚上：18:00到24:00
+- 深夜：00:00到6:00
 
 # i18n
 
