@@ -8,4 +8,8 @@ describe('Test time alias', () => {
   test('Number', () => {
     expect(Alias(1541023200000)).toBe('早晨')
   })
+
+  test('String', () => {
+    expect(Alias.bind(null, 'abc')).toThrow()
+  })
 })

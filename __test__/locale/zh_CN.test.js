@@ -13,15 +13,15 @@ describe('Test time alias: zh_CN', () => {
     expect(Alias(new Date(2018, 10, 1, 8))).toBe('上午')
   })
 
-  test('morning', () => {
+  test('noon', () => {
     expect(Alias(new Date(2018, 10, 1, 12))).toBe('中午')
   })
 
-  test('morning', () => {
+  test('afternoon', () => {
     expect(Alias(new Date(2018, 10, 1, 13))).toBe('下午')
   })
 
-  test('morning', () => {
+  test('evening', () => {
     expect(Alias(new Date(2018, 10, 1, 18))).toBe('晚上')
   })
 })

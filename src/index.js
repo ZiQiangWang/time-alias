@@ -27,15 +27,15 @@ function timeToName(hour) {
     return 'mo';
   // noon
   } else if (hour === 12) {
-      return 'no';
+    return 'no';
     // afternoon
   } else if (hour > 12 && hour <= 17) {
-      return 'af';
+    return 'af';
     // evening
   } else if (hour >= 18 && hour < 24) {
-      return 'ev';
+    return 'ev';
     // night
-  } else if (hour >= 0 && hour < 6) {
-      return 'ni';
+  } else {
+    return 'ni';
   }
 }
