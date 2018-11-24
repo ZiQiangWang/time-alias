@@ -1,0 +1,42 @@
+{
+  "name": "time-alias",
+  "version": "0.0.1",
+  "description": "把时间翻译成别名，例如：11:00到13:00=>中午",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm run clear && babel src/locale --out-dir locale && rollup -c",
+    "clear": "rimraf lib locale"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiQiangWang/time-alias.git"
+  },
+  "keywords": [
+    "time",
+    "alias",
+    "morning",
+    "afternoon",
+    "evening"
+  ],
+  "author": "wangziqiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZiQiangWang/time-alias/issues"
+  },
+  "homepage": "https://github.com/ZiQiangWang/time-alias#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify": "^6.0.0"
+  }
+}
