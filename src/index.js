@@ -1,14 +1,12 @@
 import zh_CN from './locale/zh_CN';
 
 /**
- * @param {Date, Number} datetime 当前时间
+ * @param {Date} datetime 当前时间
  * @param {String} locale 
  */
 export default function alias(datetime, locale) {
-  if (datetime instanceof Date || typeof datetime ==='number') {
-    datetime = new Date(datetime);
-  } else {
-    throw new Error('Date or Number type is expected');
+  if (!datetime instanceof Date) {
+    throw new Error('Date type is expected');
   }
 
   locale = locale || zh_CN;
