@@ -1,8 +1,8 @@
 {
   "name": "time-alias",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "把时间翻译成别名，例如：11:00到13:00=>中午",
-  "main": "index.js",
+  "main": "./lib/time-alias.min.js",
   "scripts": {
     "test": "jest --coverage",
     "build": "npm run clear && babel src/locale --out-dir locale && rollup -c",

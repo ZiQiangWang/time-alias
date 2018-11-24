@@ -5,7 +5,7 @@ import zh_CN from './locale/zh_CN';
  * @param {String} locale 
  */
 export default function alias(datetime, locale) {
-  if (!datetime instanceof Date) {
+  if (!(datetime instanceof Date)) {
     throw new Error('Date type is expected');
   }
 
